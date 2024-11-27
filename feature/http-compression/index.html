@@ -96,6 +96,8 @@
       
         <li><a href="https://fabiolb.net/feature/authorization/">Authorization</a></li>
       
+        <li><a href="https://fabiolb.net/feature/bgp/">BGP</a></li>
+      
         <li><a href="https://fabiolb.net/feature/certificate-stores/">Certificate Stores</a></li>
       
         <li><a href="https://fabiolb.net/feature/docker/">Docker Support</a></li>
@@ -109,6 +111,8 @@
         <li><a class="active" href="https://fabiolb.net/feature/http-compression/">HTTP Compression</a></li>
       
         <li><a href="https://fabiolb.net/feature/http-headers/">HTTP Header Support</a></li>
+      
+        <li><a href="https://fabiolb.net/feature/http-path-prepending/">HTTP Path Prepending</a></li>
       
         <li><a href="https://fabiolb.net/feature/http-path-stripping/">HTTP Path Stripping</a></li>
       
@@ -200,10 +204,10 @@
 a regular expression.</p>
 <p>To configure which files should be compressed on the fly set configure
 a regular expression in the <code>proxy.gzip.contenttype</code> property</p>
-<pre><code># proxy.gzip.contenttype configures which responses should be compressed.
+<pre tabindex="0"><code># proxy.gzip.contenttype configures which responses should be compressed.
 #
 # By default, responses sent to the client are not compressed even if the
-# client accepts compressed responses by setting the 'Accept-Encoding: gzip'
+# client accepts compressed responses by setting the &#39;Accept-Encoding: gzip&#39;
 # header. By setting this value responses are compressed if the Content-Type
 # header of the response matches and the response is not already compressed.
 # The list of compressable content types is defined as a regular expression.
@@ -234,10 +238,10 @@ a regular expression in the <code>proxy.gzip.contenttype</code> property</p>
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <p style="line-height: 26px;">
-                Copyright &copy; 2020-2021 Education Networks of America. All rights reserved.</br>
+                Copyright &copy; 2020-2024 Education Networks of America. All rights reserved.</br>
                 Copyright &copy; 2017-2020 Frank Schröder. All rights reserved.</br>
                 Copyright &copy; 2015-2017 eBay Software Foundation.  All rights reserved</br>
-                Last updated on 30 Apr 2021 17:18
+                Last updated on 27 Nov 2024 02:30
             </p>
           </div>
           <div class="col-md-6 col-sm-6">

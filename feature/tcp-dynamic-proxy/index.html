@@ -96,6 +96,8 @@
       
         <li><a href="https://fabiolb.net/feature/authorization/">Authorization</a></li>
       
+        <li><a href="https://fabiolb.net/feature/bgp/">BGP</a></li>
+      
         <li><a href="https://fabiolb.net/feature/certificate-stores/">Certificate Stores</a></li>
       
         <li><a href="https://fabiolb.net/feature/docker/">Docker Support</a></li>
@@ -109,6 +111,8 @@
         <li><a href="https://fabiolb.net/feature/http-compression/">HTTP Compression</a></li>
       
         <li><a href="https://fabiolb.net/feature/http-headers/">HTTP Header Support</a></li>
+      
+        <li><a href="https://fabiolb.net/feature/http-path-prepending/">HTTP Path Prepending</a></li>
       
         <li><a href="https://fabiolb.net/feature/http-path-stripping/">HTTP Path Stripping</a></li>
       
@@ -200,7 +204,7 @@ Also, the service is defined with IP and port, so that multiple services can be 
 the same TCP port.  Connections are forwarded to services based on the combination of ip:port</p>
 <p>To use TCP Dynamic proxy support the service needs to advertise <code>urlprefix-127.0.0.1:1234 proto=tcp</code> in
 Consul. In addition, fabio needs to be configured with a placeholder for the proxy.addr.:</p>
-<pre><code>fabio -proxy.addr '0.0.0.0:0;proto=tcp-dynamic;refresh=5s'
+<pre tabindex="0"><code>fabio -proxy.addr &#39;0.0.0.0:0;proto=tcp-dynamic;refresh=5s&#39;
 </code></pre><p>The TCP listener is started for the given TCP ports.  To use IP addressing to separate the services, matching IP
 addressed would need to be added to the loopback interface on the host.</p>
 
@@ -221,10 +225,10 @@ addressed would need to be added to the loopback interface on the host.</p>
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <p style="line-height: 26px;">
-                Copyright &copy; 2020-2021 Education Networks of America. All rights reserved.</br>
+                Copyright &copy; 2020-2024 Education Networks of America. All rights reserved.</br>
                 Copyright &copy; 2017-2020 Frank Schröder. All rights reserved.</br>
                 Copyright &copy; 2015-2017 eBay Software Foundation.  All rights reserved</br>
-                Last updated on 30 Apr 2021 17:18
+                Last updated on 27 Nov 2024 02:30
             </p>
           </div>
           <div class="col-md-6 col-sm-6">
